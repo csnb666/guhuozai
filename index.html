@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>古惑仔系列电影</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>香港经典电影系列</h1>
+            <p class="subtitle">重温经典，感受江湖情怀</p>
+        </header>
+        
+        <div class="card-container">
+            <div class="movie-card" id="movieCard">
+                <div class="card-image">
+                    <img src="https://1379636163.vod-qcloud.com/bc70104fvodcq1379636163/7531fd1f5145403701225591479/cNAcY6ZvMN0A.jpg!P30.png" alt="古惑仔系列电影">
+                </div>
+                <div class="card-content">
+                    <h2>古惑仔系列电影</h2>
+                    <p>点击查看全部系列</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="series-container" id="seriesContainer">
+            <div class="back-btn" id="backBtn">返回</div>
+            <h2>古惑仔系列电影</h2>
+            <div class="series-list" id="seriesList">
+                <!-- 系列列表将通过JavaScript动态生成 -->
+            </div>
+        </div>
+        
+        <!-- 新增的播放器容器 -->
+        <div class="player-container" id="playerContainer">
+            <div class="player-header">
+                <h2 class="player-title" id="playerTitle">电影播放</h2>
+                <div class="back-btn" id="playerBackBtn">返回列表</div>
+            </div>
+            <div class="video-container">
+                <video id="moviePlayer" controls>
+                    您的浏览器不支持 HTML5 视频播放。
+                </video>
+            </div>
+            <div class="loading-message" id="loadingMessage">视频加载中，可能需要等待几秒，请耐心等待！若未加载出来，请更换网络后重试。</div>
+            <button class="refresh-btn" id="refreshBtn">视频没播放出来？点击刷新试试！</button>
+            <div class="movie-info" id="movieInfo">
+                <!-- 电影信息将通过JavaScript动态生成 -->
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <p>© 2023 经典电影收藏馆 | 赖云鹏版权所有</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
